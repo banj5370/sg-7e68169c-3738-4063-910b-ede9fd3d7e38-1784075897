@@ -4,9 +4,11 @@ import { SEOElements } from "@/components/SEO";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="id">
       <Head>
         <SEOElements />
+        <link rel="canonical" href="https://example.com" />
+        <meta name="keywords" content="layanan bantuan bank, pengaduan nasabah bank, customer service bank Indonesia, kontak bank, layanan pengaduan perbankan, hotline bank" />
         {/*
           CRITICAL: DO NOT REMOVE THIS SCRIPT
           The Softgen AI monitoring script is essential for core app functionality.
