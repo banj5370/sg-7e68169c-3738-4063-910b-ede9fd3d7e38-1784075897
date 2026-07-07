@@ -57,9 +57,9 @@ export function Services() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">Ajukan keluhan atau pengaduan terkait layanan Perbankan, Transaksi, Kartu Kredit MNC Bank secara online dengan proses yang transparan.
-
-              </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
               </CardContent>
             </Card>
           )}
