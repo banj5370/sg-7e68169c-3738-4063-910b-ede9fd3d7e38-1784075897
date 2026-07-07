@@ -57,7 +57,7 @@ export function Services() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">Dapatkan informasi lengkap mengenai tabungan, deposito, Kartu Kredit, e-banking, dan berbagai produk keuangan lainnya dari PT Bank MNC Internasional Tbk.
+                <p className="text-sm text-muted-foreground leading-relaxed">Ajukan keluhan atau pengaduan terkait layanan Perbankan, Transaksi, Kartu Kredit MNC Bank secara online dengan proses yang transparan.
 
               </p>
               </CardContent>
