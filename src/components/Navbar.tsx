@@ -16,11 +16,11 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-3 group">
           <img
-            src="/logo-bank.png"
-            alt="Logo Bank"
-            className="h-9 w-9 rounded-lg object-contain"
+            src="/Logo_MNC_Bank_Gold_1_.png"
+            alt="Logo MNC Bank"
+            className="h-12 w-auto object-contain"
           />
           <div className="flex flex-col">
             <span className="text-sm font-heading font-bold leading-tight text-foreground">
