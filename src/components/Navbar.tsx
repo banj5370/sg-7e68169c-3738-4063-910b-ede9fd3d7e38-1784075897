@@ -17,9 +17,11 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <Shield className="h-5 w-5" />
-          </div>
+          <img
+            src="/logo-bank.png"
+            alt="Logo Bank"
+            className="h-9 w-9 rounded-lg object-contain"
+          />
           <div className="flex flex-col">
             <span className="text-sm font-heading font-bold leading-tight text-foreground">
               Layanan Bantuan
