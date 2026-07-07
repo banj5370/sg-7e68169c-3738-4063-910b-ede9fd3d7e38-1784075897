@@ -19,7 +19,7 @@ export function Hero() {
 
           <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl mb-6">
             Layanan Bantuan{" "}
-            <span className="text-primary">MNC Bank</span>
+            <span className="text-primary" style={{ color: "#ca8a04", fontWeight: "900" }}>MNC Bank</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -32,8 +32,8 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8"
-            >
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8">
+              
               <Link href="#kontak">
                 Ajukan Pengaduan
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -43,8 +43,8 @@ export function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="border-primary/20 text-primary hover:bg-primary/5 font-semibold px-8"
-            >
+              className="border-primary/20 text-primary hover:bg-primary/5 font-semibold px-8">
+              
               <Link href="#layanan">Lihat Layanan</Link>
             </Button>
           </div>
@@ -65,6 +65,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
