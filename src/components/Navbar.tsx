@@ -22,7 +22,7 @@ export function Navbar() {
             alt="Logo MNC Bank"
             className="h-10 w-auto object-contain" />
           
-          <span className="text-[9px] font-medium leading-tight text-muted-foreground" style={{ color: "#000000", fontSize: "12px" }}>
+          <span className="text-[9px] font-medium leading-tight text-muted-foreground" style={{ color: "#000000", fontSize: "12px", fontWeight: "700" }}>
             PT Bank MNC Internasional Tbk
           </span>
         </Link>
