@@ -6,13 +6,13 @@ const services = [
   icon: FileText,
   title: "Pengaduan Nasabah",
   description:
-  "Ajukan keluhan atau pengaduan terkait layanan perbankan, transaksi, atau produk Nama Bank Anda secara online dengan proses yang transparan."
+  "Ajukan keluhan atau pengaduan terkait layanan Perbankan, Transaksi, Kartu Kredit MNC Bank secara online dengan proses yang transparan."
 },
 {
   icon: Info,
   title: "Informasi Produk & Layanan",
   description:
-  "Dapatkan informasi lengkap mengenai tabungan, deposito, kredit, e-banking, dan berbagai produk keuangan lainnya dari Nama Bank Anda."
+  "Dapatkan informasi lengkap mengenai Tabungan, Deposito, Kartu Kredit, e-banking, dan berbagai produk keuangan lainnya dari PT Bank MNC Internasional Tbk."
 },
 {
   icon: Scale,
@@ -24,7 +24,7 @@ const services = [
   icon: MessageCircle,
   title: "Konsultasi Keuangan",
   description:
-  "Konsultasikan kebutuhan finansial Anda dengan tim ahli Nama Bank Anda untuk solusi perbankan yang paling sesuai dengan profil Anda."
+  "Konsultasikan kebutuhan finansial Anda dengan tim ahli MNC Bank untuk solusi perbankan yang paling sesuai dengan profil Anda."
 }];
 
 
