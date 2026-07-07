@@ -20,9 +20,9 @@ export function Navbar() {
           <img
             src="/Logo_MNC_Bank_Gold_1_.png"
             alt="Logo MNC Bank"
-            className="h-10 w-auto object-contain"
-          />
-          <span className="text-[9px] font-medium leading-tight text-muted-foreground">
+            className="h-10 w-auto object-contain" />
+          
+          <span className="text-[9px] font-medium leading-tight text-muted-foreground" style={{ color: "#000000", fontSize: "12px" }}>
             PT Bank MNC Internasional Tbk
           </span>
         </Link>
