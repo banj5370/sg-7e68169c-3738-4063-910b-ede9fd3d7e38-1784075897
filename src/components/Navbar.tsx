@@ -25,7 +25,7 @@ export function Navbar() {
               Layanan Bantuan
             </span>
             <span className="text-[10px] font-medium leading-tight text-muted-foreground">
-              Nama Bank Anda
+              Perbankan Indonesia
             </span>
           </div>
         </Link>
