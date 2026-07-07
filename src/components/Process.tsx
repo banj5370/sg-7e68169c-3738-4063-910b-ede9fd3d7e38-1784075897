@@ -34,7 +34,7 @@ export function Process() {
           </h2>
           <p className="text-muted-foreground text-lg">
             Tiga langkah mudah untuk mendapatkan bantuan dari layanan
-            customer service <strong>PT Bank MNC Iternasional Tbk.</strong>.
+            customer service, <strong>PT Bank MNC Iternasional Tbk.</strong>.
           </p>
         </div>
 
