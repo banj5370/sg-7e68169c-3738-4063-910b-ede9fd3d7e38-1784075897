@@ -7,11 +7,11 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "#layanan", label: "Layanan" },
-    { href: "#alur", label: "Alur Bantuan" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#kontak", label: "Hubungi Kami" },
-  ];
+  { href: "#layanan", label: "Layanan" },
+  { href: "#alur", label: "Alur Bantuan" },
+  { href: "#faq", label: "FAQ" },
+  { href: "#kontak", label: "Hubungi Kami" }];
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
@@ -20,12 +20,12 @@ export function Navbar() {
           <img
             src="/Logo_MNC_Bank_Gold_1_.png"
             alt="Logo MNC Bank"
-            className="h-10 w-auto object-contain"
-          />
+            className="h-10 w-auto object-contain" />
+          
           <div className="flex flex-col">
-            <span className="text-sm font-heading font-bold leading-tight text-foreground">
-              Layanan Bantuan
-            </span>
+            
+
+            
             <span className="text-[10px] font-medium leading-tight text-muted-foreground">
               PT Bank MNC Internasional Tbk
             </span>
@@ -33,22 +33,22 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-md transition-colors"
-            >
+          {navLinks.map((link) =>
+          <Link
+            key={link.href}
+            href={link.href}
+            className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground rounded-md transition-colors">
+            
               {link.label}
             </Link>
-          ))}
+          )}
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
           <a
             href="tel:1500XXX"
-            className="flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-          >
+            className="flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+            
             <Phone className="h-4 w-4" />
             1500XXX
           </a>
@@ -60,37 +60,37 @@ export function Navbar() {
         <button
           className="md:hidden p-2 rounded-md hover:bg-muted transition-colors"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
+          aria-label="Toggle menu">
+          
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
-      {isOpen && (
-        <div className="md:hidden border-t border-border bg-background">
+      {isOpen &&
+      <div className="md:hidden border-t border-border bg-background">
           <nav className="container flex flex-col gap-1 py-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-md transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
+            {navLinks.map((link) =>
+          <Link
+            key={link.href}
+            href={link.href}
+            className="px-3 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-md transition-colors"
+            onClick={() => setIsOpen(false)}>
+            
                 {link.label}
               </Link>
-            ))}
+          )}
             <div className="flex items-center gap-3 px-3 pt-2 border-t border-border mt-1">
               <a
-                href="tel:1500XXX"
-                className="flex items-center gap-2 text-sm font-medium text-primary"
-              >
+              href="tel:1500XXX"
+              className="flex items-center gap-2 text-sm font-medium text-primary">
+              
                 <Phone className="h-4 w-4" />
                 1500XXX
               </a>
             </div>
           </nav>
         </div>
-      )}
-    </header>
-  );
+      }
+    </header>);
+
 }
