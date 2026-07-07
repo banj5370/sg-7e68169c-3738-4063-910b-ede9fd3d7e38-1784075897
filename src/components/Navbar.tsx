@@ -22,14 +22,9 @@ export function Navbar() {
             alt="Logo MNC Bank"
             className="h-10 w-auto object-contain"
           />
-          <div className="flex flex-col">
-            <span className="text-xs font-heading font-bold leading-tight text-foreground">
-              Layanan Bantuan
-            </span>
-            <span className="text-[9px] font-medium leading-tight text-muted-foreground">
-              PT Bank MNC Internasional Tbk
-            </span>
-          </div>
+          <span className="text-[9px] font-medium leading-tight text-muted-foreground">
+            PT Bank MNC Internasional Tbk
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
