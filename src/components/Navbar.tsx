@@ -16,17 +16,17 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group">
+        <Link href="/" className="flex flex-col items-start gap-0.5 group">
           <img
             src="/Logo_MNC_Bank_Gold_1_.png"
             alt="Logo MNC Bank"
-            className="h-10 w-auto object-contain" />
-          
+            className="h-10 w-auto object-contain"
+          />
           <div className="flex flex-col">
-            
-
-            
-            <span className="text-[10px] font-medium leading-tight text-muted-foreground">
+            <span className="text-xs font-heading font-bold leading-tight text-foreground">
+              Layanan Bantuan
+            </span>
+            <span className="text-[9px] font-medium leading-tight text-muted-foreground">
               PT Bank MNC Internasional Tbk
             </span>
           </div>
