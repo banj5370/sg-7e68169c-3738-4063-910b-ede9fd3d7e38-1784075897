@@ -14,7 +14,7 @@ export function Hero() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary mb-6">
             <Shield className="h-3.5 w-3.5" />
-            Layanan Resmi Nasabah Bank Indonesia
+            Layanan Resmi PT Bank MNC Internasional Tbk
           </div>
 
           <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl mb-6">
