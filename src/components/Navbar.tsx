@@ -20,14 +20,14 @@ export function Navbar() {
           <img
             src="/Logo_MNC_Bank_Gold_1_.png"
             alt="Logo MNC Bank"
-            className="h-12 w-auto object-contain"
+            className="h-10 w-auto object-contain"
           />
           <div className="flex flex-col">
             <span className="text-sm font-heading font-bold leading-tight text-foreground">
               Layanan Bantuan
             </span>
             <span className="text-[10px] font-medium leading-tight text-muted-foreground">
-              Perbankan Indonesia
+              PT Bank MNC Internasional Tbk
             </span>
           </div>
         </Link>
