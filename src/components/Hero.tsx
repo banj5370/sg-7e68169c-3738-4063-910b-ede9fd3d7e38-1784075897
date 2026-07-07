@@ -19,13 +19,13 @@ export function Hero() {
 
           <h1 className="font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl mb-6">
             Layanan Bantuan{" "}
-            <span className="text-primary">Nama Bank Anda</span>
+            <span className="text-primary">MNC Bank</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
             Solusi cepat dan terpercaya untuk pengaduan, konsultasi, dan
             informasi layanan perbankan. Tim kami siap membantu nasabah{" "}
-            <strong>Nama Bank Anda</strong> 24 jam setiap hari.
+            <strong>MNC Bank</strong> 24 jam setiap hari.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-12">
