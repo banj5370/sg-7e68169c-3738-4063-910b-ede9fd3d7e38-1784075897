@@ -2,31 +2,31 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Info, Scale, MessageCircle } from "lucide-react";
 
 const services = [
-  {
-    icon: FileText,
-    title: "Pengaduan Nasabah",
-    description:
-      "Ajukan keluhan atau pengaduan terkait layanan perbankan, transaksi, atau produk Nama Bank Anda secara online dengan proses yang transparan.",
-  },
-  {
-    icon: Info,
-    title: "Informasi Produk & Layanan",
-    description:
-      "Dapatkan informasi lengkap mengenai tabungan, deposito, kredit, e-banking, dan berbagai produk keuangan lainnya dari Nama Bank Anda.",
-  },
-  {
-    icon: Scale,
-    title: "Mediasi & Dispute",
-    description:
-      "Layanan penyelesaian sengketa perbankan melalui mediasi profesional sesuai ketentuan OJK dan peraturan perundangan yang berlaku.",
-  },
-  {
-    icon: MessageCircle,
-    title: "Konsultasi Keuangan",
-    description:
-      "Konsultasikan kebutuhan finansial Anda dengan tim ahli Nama Bank Anda untuk solusi perbankan yang paling sesuai dengan profil Anda.",
-  },
-];
+{
+  icon: FileText,
+  title: "Pengaduan Nasabah",
+  description:
+  "Ajukan keluhan atau pengaduan terkait layanan perbankan, transaksi, atau produk Nama Bank Anda secara online dengan proses yang transparan."
+},
+{
+  icon: Info,
+  title: "Informasi Produk & Layanan",
+  description:
+  "Dapatkan informasi lengkap mengenai tabungan, deposito, kredit, e-banking, dan berbagai produk keuangan lainnya dari Nama Bank Anda."
+},
+{
+  icon: Scale,
+  title: "Mediasi & Dispute",
+  description:
+  "Layanan penyelesaian sengketa perbankan melalui mediasi profesional sesuai ketentuan OJK dan peraturan perundangan yang berlaku."
+},
+{
+  icon: MessageCircle,
+  title: "Konsultasi Keuangan",
+  description:
+  "Konsultasikan kebutuhan finansial Anda dengan tim ahli Nama Bank Anda untuk solusi perbankan yang paling sesuai dengan profil Anda."
+}];
+
 
 export function Services() {
   return (
@@ -38,16 +38,16 @@ export function Services() {
           </h2>
           <p className="text-muted-foreground text-lg">
             Berbagai layanan bantuan yang tersedia untuk nasabah{" "}
-            <strong>Nama Bank Anda</strong> demi kenyamanan dan kepuasan Anda.
+            <strong>MNC Bank</strong> demi kenyamanan dan kepuasan Anda.
           </p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service) => (
-            <Card
-              key={service.title}
-              className="group border-border/60 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
-            >
+          {services.map((service) =>
+          <Card
+            key={service.title}
+            className="group border-border/60 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+            
               <CardHeader className="pb-3">
                 <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                   <service.icon className="h-6 w-6" />
@@ -57,14 +57,14 @@ export function Services() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">Dapatkan informasi lengkap mengenai tabungan, deposito, Kartu Kredit, e-banking, dan berbagai produk keuangan lainnya dari PT Bank MNC Internasional Tbk.
+
+              </p>
               </CardContent>
             </Card>
-          ))}
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
