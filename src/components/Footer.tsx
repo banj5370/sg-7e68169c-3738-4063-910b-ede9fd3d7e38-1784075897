@@ -15,7 +15,7 @@ const footerLinks = {
     { label: "Kebijakan Privasi", href: "#" },
   ],
   kontak: [
-    { label: "Call Center: 1500XXX", href: "tel:1500XXX" },
+    { label: "Call Center: 081 114 4061", href: "tel:1500XXX" },
     { label: "Email Pengaduan", href: "mailto:pengaduan@namabankanda.co.id" },
     { label: "Kantor Cabang", href: "#" },
   ],
@@ -42,7 +42,7 @@ export function Footer() {
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Layanan bantuan resmi untuk nasabah{" "}
-              <strong>Nama Bank Anda</strong>. Komitmen kami adalah memberikan
+              <strong>PT Bank MNC Internasional Tbk</strong>. Komitmen kami adalah memberikan
               pelayanan terbaik dan solusi tepat untuk setiap keluhan nasabah.
             </p>
           </div>
@@ -105,7 +105,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground text-center md:text-left">
-            © {new Date().getFullYear()} Nama Bank Anda. Hak Cipta Dilindungi.
+            © {new Date().getFullYear()} PT Bank MNC Internasional Tbk. Hak Cipta Dilindungi.
             Terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK) & Bank Indonesia.
           </p>
           <div className="flex gap-6 text-xs text-muted-foreground">
