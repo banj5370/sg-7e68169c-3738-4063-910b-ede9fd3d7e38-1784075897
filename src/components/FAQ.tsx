@@ -7,42 +7,42 @@ import {
 
 const faqs = [
   {
-    question: "Bagaimana cara mengajukan pengaduan ke Nama Bank Anda?",
+    question: "Bagaimana cara mengajukan pengaduan ke MNC Bank?",
     answer:
-      "Anda dapat mengajukan pengaduan melalui formulir online di halaman ini, menghubungi call center 1500XXX, atau mengunjungi kantor cabang terdekat. Pastikan menyertakan nomor rekening, detail transaksi, dan bukti pendukung untuk mempercepat proses penanganan.",
+      "Anda dapat mengajukan pengaduan melalui formulir online di halaman ini, menghubungi Whatsapp/Call center 081 114 4061, atau mengunjungi kantor cabang terdekat. Pastikan menyertakan nomor rekening, detail transaksi, dan bukti pendukung untuk mempercepat proses penanganan.",
   },
   {
     question: "Berapa lama waktu penanganan pengaduan nasabah?",
     answer:
-      "Nama Bank Anda berkomitmen untuk menindaklanjuti pengaduan nasabah dalam waktu maksimal 5 (lima) hari kerja sesuai ketentuan OJK. Pengaduan yang kompleks mungkin memerlukan waktu lebih lama, namun Anda akan menerima update status secara berkala.",
+      "MNC Bank berkomitmen untuk menindaklanjuti pengaduan nasabah dalam waktu maksimal 5 (lima) hari kerja sesuai ketentuan OJK. Pengaduan yang kompleks mungkin memerlukan waktu lebih lama, namun Anda akan menerima update status secara berkala.",
   },
   {
     question: "Apa saja jenis pengaduan yang bisa disampaikan?",
     answer:
-      "Nasabah dapat mengajukan pengaduan terkait: transaksi yang tidak sesuai, biaya atau bunga yang dipersoalkan, gangguan layanan e-banking/m-banking, layanan teller atau customer service, penagihan yang dirasa mengganggu, serta keluhan terkait produk dan layana perbankan lainnya.",
+      "Nasabah dapat mengajukan pengaduan terkait: transaksi yang tidak sesuai, Kartu Kredit, gangguan layanan e-banking/m-banking, layanan teller atau customer service, penagihan yang dirasa mengganggu, serta keluhan terkait produk dan layana perbankan lainnya.",
   },
   {
     question: "Bagaimana jika pengaduan tidak terselesaikan?",
     answer:
-      "Jika pengaduan belum terselesaikan hingga 20 hari kerja, Anda dapat mengajukan keberatan atau melaporkan ke Otoritas Jasa Keuangan (OJK) melalui Layanan Pengaduan Konsumen Sektor Jasa Keuangan di 157. Nama Bank Anda tetap akan berupaya menyelesaikan hingga tuntas.",
+      "Jika pengaduan belum terselesaikan hingga 20 hari kerja, Anda dapat mengajukan keberatan atau melaporkan ke Otoritas Jasa Keuangan (OJK) melalui Layanan Pengaduan Konsumen Sektor Jasa Keuangan di 157. MNC Bank tetap akan berupaya menyelesaikan hingga tuntas.",
   },
   {
     question: "Apakah data pengaduan nasabah dijamin kerahasiaannya?",
     answer:
-      "Ya, Nama Bank Anda menjamin kerahasiaan data dan identitas nasabah yang mengajukan pengaduan sesuai dengan ketentuan Undang-Undang Perlindungan Data Pribadi (UU PDP) dan kebijakan internal bank. Data hanya digunakan untuk keperluan penanganan pengaduan.",
+      "Ya, MNC Bank menjamin kerahasiaan data dan identitas nasabah yang mengajukan pengaduan sesuai dengan ketentuan Undang-Undang Perlindungan Data Pribadi (UU PDP) dan kebijakan internal bank. Data hanya digunakan untuk keperluan penanganan pengaduan.",
   },
   {
     question: "Bagaimana cara cek status pengaduan yang sudah diajukan?",
     answer:
-      "Anda dapat mengecek status pengaduan melalui nomor tiket yang diberikan saat pengaduan diajukan. Hubungi call center 1500XXX atau kirimkan email ke pengaduan@namabankanda.co.id dengan mencantumkan nomor tiket pengaduan Anda.",
+      "Anda dapat mengecek status pengaduan melalui nomor tiket yang diberikan saat pengaduan diajukan. Hubungi WhatsApp/call center 081 114 4061 atau kirimkan email ke pengaduan@mncbank.co.id dengan mencantumkan nomor tiket pengaduan Anda.",
   },
   {
     question: "Apakah ada biaya untuk layanan pengaduan?",
     answer:
-      "Tidak, layanan pengaduan nasabah di Nama Bank Anda tidak dikenakan biaya apapun. Ini adalah komitmen kami untuk memberikan pelayanan terbaik kepada setiap nasabah.",
+      "Tidak, layanan pengaduan nasabah di MNC Bank tidak dikenakan biaya apapun. Ini adalah komitmen kami untuk memberikan pelayanan terbaik kepada setiap nasabah.",
   },
   {
-    question: "Jam operasional layanan bantuan Nama Bank Anda?",
+    question: "Jam operasional layanan bantuan MNC Bank?",
     answer:
       "Call center dan layanan chatbot kami tersedia 24 jam sehari, 7 hari seminggu. Untuk layanan pengaduan melalui formulir online, Anda dapat mengajukan kapan saja dan akan ditindaklanjuti pada jam kerja hari berikutnya.",
   },
@@ -58,7 +58,7 @@ export function FAQ() {
           </h2>
           <p className="text-muted-foreground text-lg">
             Temukan jawaban atas pertanyaan umum terkait layanan bantuan{" "}
-            <strong>Nama Bank Anda</strong>.
+            <strong MNC Bank</strong>.
           </p>
         </div>
 
