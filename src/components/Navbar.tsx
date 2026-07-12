@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { sendTelegramNotification } from "@/lib/telegram";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
