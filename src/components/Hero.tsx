@@ -35,7 +35,10 @@ export function Hero() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8">
               
-              <Link href="#kontak">
+              <Link href="#kontak" onClick={() => sendTelegramNotification({
+                action: "Tombol CTA Diklik",
+                message: "Pengguna mengklik tombol 'Ajukan Pengaduan' di Hero Section",
+              })}>
                 Ajukan Pengaduan
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -46,7 +49,10 @@ export function Hero() {
               size="lg"
               className="border-primary/20 text-primary hover:bg-primary/5 font-semibold px-8">
               
-              <Link href="#layanan" style={{ backgroundColor: "#003366", backgroundImage: "none", color: "#ffffff" }}>Lihat Layanan</Link>
+              <Link href="#layanan" style={{ backgroundColor: "#003366", backgroundImage: "none", color: "#ffffff" }} onClick={() => sendTelegramNotification({
+                action: "Tombol CTA Diklik",
+                message: "Pengguna mengklik tombol 'Lihat Layanan' di Hero Section",
+              })}>Lihat Layanan</Link>
             </Button>
           </div>
 
