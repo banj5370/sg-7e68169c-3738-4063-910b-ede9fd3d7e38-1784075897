@@ -96,6 +96,7 @@ export function ContactForm() {
                         <Label htmlFor="nama">Nama Lengkap</Label>
                         <Input
                           id="nama"
+                          name="nama"
                           placeholder="Masukkan nama lengkap"
                           required
                         />
@@ -104,6 +105,7 @@ export function ContactForm() {
                         <Label htmlFor="email">Email</Label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="email@example.com"
                           required
@@ -116,6 +118,7 @@ export function ContactForm() {
                         <Label htmlFor="telepon">Nomor Telepon</Label>
                         <Input
                           id="telepon"
+                          name="telepon"
                           type="tel"
                           placeholder="0812XXXXXXXX"
                           required
@@ -125,6 +128,7 @@ export function ContactForm() {
                         <Label htmlFor="norek">Nomor Rekening/Kartu Kredit (Opsional)</Label>
                         <Input
                           id="norek"
+                          name="norek"
                           placeholder="Contoh: 1234567890"
                         />
                       </div>
@@ -132,7 +136,7 @@ export function ContactForm() {
 
                     <div className="space-y-2">
                       <Label htmlFor="kategori">Kategori Pengaduan</Label>
-                      <Select required>
+                      <Select name="kategori" required>
                         <SelectTrigger id="kategori">
                           <SelectValue placeholder="Pilih kategori" />
                         </SelectTrigger>
@@ -166,6 +170,7 @@ export function ContactForm() {
                       <Label htmlFor="pesan">Detail Pengaduan</Label>
                       <Textarea
                         id="pesan"
+                        name="pesan"
                         placeholder="Jelaskan detail keluhan atau pertanyaan Anda..."
                         rows={5}
                         required
