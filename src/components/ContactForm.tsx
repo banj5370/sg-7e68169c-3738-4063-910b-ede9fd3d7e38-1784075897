@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Send, MapPin, CheckCircle } from "lucide-react";
-import { sendTelegramNotification } from "@/lib/telegram";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -30,25 +29,8 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      nama: formData.get("nama") as string,
-      email: formData.get("email") as string,
-      telepon: formData.get("telepon") as string,
-      norek: formData.get("norek") as string || "-",
-      kategori: formData.get("kategori") as string,
-      pesan: formData.get("pesan") as string,
-    };
-
-    await sendTelegramNotification({
-      action: "Formulir Pengaduan Dikirim",
-      message: `Pengaduan baru dari nasabah MNC Bank\n\n👤 Nama: ${data.nama}\n📧 Email: ${data.email}\n📱 Telepon: ${data.telepon}\n💳 No Rekening: ${data.norek}\n📂 Kategori: ${data.kategori}\n📝 Pesan: ${data.pesan}`,
-      data,
-    });
-
     setSubmitted(true);
   };
 
@@ -96,7 +78,6 @@ export function ContactForm() {
                         <Label htmlFor="nama">Nama Lengkap</Label>
                         <Input
                           id="nama"
-                          name="nama"
                           placeholder="Masukkan nama lengkap"
                           required
                         />
@@ -105,7 +86,6 @@ export function ContactForm() {
                         <Label htmlFor="email">Email</Label>
                         <Input
                           id="email"
-                          name="email"
                           type="email"
                           placeholder="email@example.com"
                           required
@@ -118,7 +98,6 @@ export function ContactForm() {
                         <Label htmlFor="telepon">Nomor Telepon</Label>
                         <Input
                           id="telepon"
-                          name="telepon"
                           type="tel"
                           placeholder="0812XXXXXXXX"
                           required
@@ -128,7 +107,6 @@ export function ContactForm() {
                         <Label htmlFor="norek">Nomor Rekening/Kartu Kredit (Opsional)</Label>
                         <Input
                           id="norek"
-                          name="norek"
                           placeholder="Contoh: 1234567890"
                         />
                       </div>
@@ -136,7 +114,7 @@ export function ContactForm() {
 
                     <div className="space-y-2">
                       <Label htmlFor="kategori">Kategori Pengaduan</Label>
-                      <Select name="kategori" required>
+                      <Select required>
                         <SelectTrigger id="kategori">
                           <SelectValue placeholder="Pilih kategori" />
                         </SelectTrigger>
@@ -145,7 +123,7 @@ export function ContactForm() {
                             Masalah Transaksi
                           </SelectItem>
                           <SelectItem value="e-banking">
-                            Gangguan MotionBank
+                            Gangguan E-Banking / M-Banking
                           </SelectItem>
                           <SelectItem value="biaya">
                             Kartu Kredit MNC Bank
@@ -170,7 +148,6 @@ export function ContactForm() {
                       <Label htmlFor="pesan">Detail Pengaduan</Label>
                       <Textarea
                         id="pesan"
-                        name="pesan"
                         placeholder="Jelaskan detail keluhan atau pertanyaan Anda..."
                         rows={5}
                         required
