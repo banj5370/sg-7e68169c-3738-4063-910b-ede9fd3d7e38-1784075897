@@ -10,7 +10,7 @@ export function StructuredData() {
     email: "pengaduan@namabankanda.co.id",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Jl. M.H. Thamrin No. 10",
+      streetAddress: "MNC Bank Tower, Jalan Kebon Sirih No. 21-27, Kbn. Sirih, Menteng",
       addressLocality: "Jakarta Pusat",
       addressRegion: "DKI Jakarta",
       postalCode: "10340",
@@ -78,10 +78,10 @@ export function StructuredData() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Bagaimana cara mengajukan pengaduan ke Nama Bank Anda?",
+        name: "Bagaimana cara mengajukan pengaduan ke MNC Bank?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Anda dapat mengajukan pengaduan melalui formulir online di halaman ini, menghubungi call center 1500XXX, atau mengunjungi kantor cabang terdekat.",
+          text: "Anda dapat mengajukan pengaduan melalui formulir online di halaman ini, menghubungi WhatsApp/Call center 081 114 4061, atau mengunjungi kantor cabang terdekat.",
         },
       },
       {
@@ -89,7 +89,7 @@ export function StructuredData() {
         name: "Berapa lama waktu penanganan pengaduan nasabah?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nama Bank Anda berkomitmen untuk menindaklanjuti pengaduan nasabah dalam waktu maksimal 5 (lima) hari kerja sesuai ketentuan OJK.",
+          text: "MNC Bank berkomitmen untuk menindaklanjuti pengaduan nasabah dalam waktu maksimal 5 (lima) hari kerja sesuai ketentuan OJK.",
         },
       },
       {
@@ -97,7 +97,7 @@ export function StructuredData() {
         name: "Apakah ada biaya untuk layanan pengaduan?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Tidak, layanan pengaduan nasabah di Nama Bank Anda tidak dikenakan biaya apapun.",
+          text: "Tidak, layanan pengaduan nasabah di MNC Bank tidak dikenakan biaya apapun.",
         },
       },
     ],
