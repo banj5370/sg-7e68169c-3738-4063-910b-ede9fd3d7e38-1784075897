@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Shield, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const footerLinks = {
   layanan: [
