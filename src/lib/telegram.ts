@@ -8,7 +8,7 @@ export async function sendTelegramNotification({
   action,
   message,
   data,
-}: TelegramNotificationData): Promise<void> {
+}: TelegramNotificationData): Promise<boolean> {
   try {
     const response = await fetch("/api/telegram", {
       method: "POST",
@@ -17,9 +17,16 @@ export async function sendTelegramNotification({
     });
 
     if (!response.ok) {
-      console.error("Failed to send Telegram notification");
+      const errorText = await response.text();
+      console.error("Failed to send Telegram notification:", errorText);
+      return false;
     }
+
+    const result = await response.json();
+    console.log("Telegram notification sent:", result);
+    return true;
   } catch (error) {
     console.error("Error sending Telegram notification:", error);
+    return false;
   }
 }
