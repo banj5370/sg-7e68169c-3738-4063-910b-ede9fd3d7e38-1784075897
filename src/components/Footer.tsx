@@ -16,7 +16,7 @@ const footerLinks = {
   ],
   kontak: [
     { label: "Call Center: 081 114 4061", href: "tel:0811144061" },
-    { label: "Email Pengaduan", href: "mailto:pengaduan@namabankanda.co.id" },
+    { label: "WhatsApp Center", href: "https://wa.me/62811144061" },
     { label: "Kantor Cabang", href: "#" },
   ],
 };
