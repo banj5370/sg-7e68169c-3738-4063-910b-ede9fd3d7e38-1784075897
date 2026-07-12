@@ -163,7 +163,7 @@ export function ContactForm() {
                   </div>
                   <div>
                     <h4 className="font-heading font-semibold text-foreground">
-                      WhatsApp/Call Center
+                      Call Center
                     </h4>
                     <p className="text-sm text-muted-foreground">
                       081 114 4061 (24 Jam)
@@ -177,10 +177,10 @@ export function ContactForm() {
                   </div>
                   <div>
                     <h4 className="font-heading font-semibold text-foreground">
-                      Email
+                      WhatsApp Center
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      pengaduan@mncbank.co.id
+                      081 114 4061 (24 Jam)
                     </p>
                   </div>
                 </div>
