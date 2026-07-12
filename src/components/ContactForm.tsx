@@ -120,10 +120,10 @@ export function ContactForm() {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="transaksi">
-                            Masalah Transaksi
+                            Sanggahan Transaksi
                           </SelectItem>
                           <SelectItem value="e-banking">
-                            Gangguan E-Banking / M-Banking
+                            Gangguan MotionBank
                           </SelectItem>
                           <SelectItem value="biaya">
                             Kartu Kredit MNC Bank
