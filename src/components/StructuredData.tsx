@@ -60,7 +60,7 @@ export function StructuredData() {
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Layanan Bantuan Nama Bank Anda",
+    name: "Layanan Bantuan MNC Bank",
     url: "https://example.com",
     potentialAction: {
       "@type": "SearchAction",
