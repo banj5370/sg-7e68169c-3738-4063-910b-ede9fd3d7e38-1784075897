@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageSquare, Clock, Shield } from "lucide-react";
+import { sendTelegramNotification } from "@/lib/telegram";
 
 export function Hero() {
   return (
