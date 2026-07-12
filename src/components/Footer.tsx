@@ -16,7 +16,7 @@ const footerLinks = {
   ],
   kontak: [
     { label: "Call Center: 081 114 4061", href: "tel:0811144061" },
-    { label: "WhatsApp Center", href: "https://wa.me/62811144061" },
+    { label: "WhatsApp Center: 081 114 4061", href: "https://wa.me/62811144061" },
     { label: "Kantor Cabang", href: "#" },
   ],
 };
