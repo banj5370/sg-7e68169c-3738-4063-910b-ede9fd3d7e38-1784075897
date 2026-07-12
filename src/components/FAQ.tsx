@@ -58,7 +58,7 @@ export function FAQ() {
           </h2>
           <p className="text-muted-foreground text-lg">
             Temukan jawaban atas pertanyaan umum terkait layanan bantuan{" "}
-            <strong MNC Bank</strong>.
+            <strong>MNC Bank</strong>.
           </p>
         </div>
 
