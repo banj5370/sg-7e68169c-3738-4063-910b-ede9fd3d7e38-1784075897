@@ -1,28 +1,28 @@
 import { ClipboardList, Headphones, CheckCircle } from "lucide-react";
 
 const steps = [
-{
-  number: "01",
-  icon: ClipboardList,
-  title: "Ajukan Pengaduan",
-  description:
-  "Isi formulir pengaduan online atau hubungi call center Nama Bank Anda. Sertakan detail lengkap keluhan Anda untuk penanganan yang lebih cepat."
-},
-{
-  number: "02",
-  icon: Headphones,
-  title: "Verifikasi & Tindak Lanjut",
-  description:
-  "Tim layanan pelanggan kami akan memverifikasi dan menindaklanjuti pengaduan Anda dalam waktu 1x24 jam kerja sesuai SLA yang berlaku."
-},
-{
-  number: "03",
-  icon: CheckCircle,
-  title: "Penyelesaian & Konfirmasi",
-  description:
-  "Dapatkan solusi dan konfirmasi penyelesaian pengaduan. Kami memastikan setiap nasabah Nama Bank Anda mendapatkan resolusi yang memuaskan."
-}];
-
+  {
+    number: "01",
+    icon: ClipboardList,
+    title: "Ajukan Pengaduan",
+    description:
+      "Isi formulir pengaduan online atau hubungi call center MNC Bank. Sertakan detail lengkap keluhan Anda untuk penanganan yang lebih cepat."
+  },
+  {
+    number: "02",
+    icon: Headphones,
+    title: "Verifikasi & Tindak Lanjut",
+    description:
+      "Tim layanan pelanggan kami akan memverifikasi dan menindaklanjuti pengaduan Anda dalam waktu 1x24 jam kerja sesuai SLA yang berlaku."
+  },
+  {
+    number: "03",
+    icon: CheckCircle,
+    title: "Penyelesaian & Konfirmasi",
+    description:
+      "Dapatkan solusi dan konfirmasi penyelesaian pengaduan. Kami memastikan setiap nasabah MNC Bank mendapatkan resolusi yang memuaskan."
+  }
+];
 
 export function Process() {
   return (
@@ -34,7 +34,7 @@ export function Process() {
           </h2>
           <p className="text-muted-foreground text-lg">
             Tiga langkah mudah untuk mendapatkan bantuan dari layanan
-            customer service, <strong>PT Bank MNC Iternasional Tbk.</strong>
+            customer service, <strong>PT Bank MNC Internasional Tbk.</strong>
           </p>
         </div>
 
@@ -42,11 +42,11 @@ export function Process() {
           <div className="hidden lg:block absolute top-24 left-[16.67%] right-[16.67%] h-0.5 bg-border" />
 
           <div className="grid gap-8 md:grid-cols-3">
-            {steps.map((step) =>
-            <div
-              key={step.number}
-              className="relative flex flex-col items-center text-center">
-              
+            {steps.map((step) => (
+              <div
+                key={step.number}
+                className="relative flex flex-col items-center text-center"
+              >
                 <div className="relative z-10 mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-lg shadow-primary/20">
                   <step.icon className="h-7 w-7" />
                 </div>
