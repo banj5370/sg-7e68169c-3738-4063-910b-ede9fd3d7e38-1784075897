@@ -30,7 +30,7 @@ export function ContactForm() {
           </h2>
           <p className="text-muted-foreground text-lg">
             Ajukan pengaduan, konsultasi, atau pertanyaan Anda melalui formulir
-            di bawah ini. Tim <strong>Nama Bank Anda</strong> akan segera
+            di bawah ini. Tim <strong>MNC Bank</strong> akan segera
             menindaklanjuti.
           </p>
         </div>
@@ -54,7 +54,7 @@ export function ContactForm() {
                     </h3>
                     <p className="text-muted-foreground max-w-sm">
                       Terima kasih. Tim layanan pelanggan{" "}
-                      <strong>Nama Bank Anda</strong> akan menghubungi Anda
+                      <strong>MNC Bank</strong> akan menghubungi Anda
                       dalam waktu 1x24 jam kerja.
                     </p>
                   </div>
@@ -91,7 +91,7 @@ export function ContactForm() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="norek">Nomor Rekening (Opsional)</Label>
+                        <Label htmlFor="norek">Nomor Rekening/Kartu Kredit (Opsional)</Label>
                         <Input
                           id="norek"
                           placeholder="Contoh: 1234567890"
@@ -113,7 +113,7 @@ export function ContactForm() {
                             Gangguan E-Banking / M-Banking
                           </SelectItem>
                           <SelectItem value="biaya">
-                            Biaya / Bunga
+                            Kartu Kredit MNC Bank
                           </SelectItem>
                           <SelectItem value="layanan">
                             Layanan Customer Service
@@ -163,10 +163,10 @@ export function ContactForm() {
                   </div>
                   <div>
                     <h4 className="font-heading font-semibold text-foreground">
-                      Call Center
+                      WhatsApp/Call Center
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      1500XXX (24 Jam)
+                      081 114 4061 (24 Jam)
                     </p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export function ContactForm() {
                       Email
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      pengaduan@namabankanda.co.id
+                      pengaduan@mncbank.co.id
                     </p>
                   </div>
                 </div>
