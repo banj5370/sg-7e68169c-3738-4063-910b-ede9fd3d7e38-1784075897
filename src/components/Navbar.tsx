@@ -59,12 +59,19 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm font-medium text-[#25D366] hover:text-[#128C7E] transition-colors"
+            onClick={() => sendTelegramNotification({
+              action: "WhatsApp Link Diklik",
+              message: "Pengguna mengklik link WhatsApp di Navbar Desktop",
+            })}
           >
             <WhatsAppIcon className="h-4 w-4" />
             081 114 4061
           </a>
           <Button asChild size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
-            <Link href="#kontak">Ajukan Pengaduan</Link>
+            <Link href="#kontak" onClick={() => sendTelegramNotification({
+              action: "Tombol CTA Diklik",
+              message: "Pengguna mengklik tombol 'Ajukan Pengaduan' di Navbar Desktop",
+            })}>Ajukan Pengaduan</Link>
           </Button>
         </div>
 
