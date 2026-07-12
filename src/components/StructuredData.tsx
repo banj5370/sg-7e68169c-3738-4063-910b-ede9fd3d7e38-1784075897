@@ -6,7 +6,7 @@ export function StructuredData() {
     description:
       "Layanan bantuan resmi untuk nasabah bank di Indonesia. Ajukan pengaduan, konsultasi, dan dapatkan informasi produk & layanan perbankan.",
     url: "https://example.com",
-    telephone: "1500XXX",
+    telephone: "081 114 4061",
     email: "pengaduan@namabankanda.co.id",
     address: {
       "@type": "PostalAddress",
