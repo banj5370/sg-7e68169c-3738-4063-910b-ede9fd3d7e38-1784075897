@@ -9,7 +9,7 @@ interface SEOProps {
 
 // SEO elements that can be used in _document.tsx (returns JSX without Head wrapper)
 export function SEOElements({
-  title = "Layanan Bantuan Bank Indonesia — Pengaduan & Informasi Nasabah",
+  title = "Layanan Bantuan PT Bank MNC Internasional — Pengaduan & Informasi Nasabah",
   description = "Layanan bantuan resmi untuk nasabah bank di Indonesia. Ajukan pengaduan, konsultasi, dan dapatkan informasi produk & layanan perbankan secara cepat dan aman.",
   image = "/og-image.png",
   url,
