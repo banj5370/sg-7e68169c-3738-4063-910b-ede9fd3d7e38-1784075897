@@ -103,6 +103,10 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm font-medium text-[#25D366]"
+                onClick={() => sendTelegramNotification({
+                  action: "WhatsApp Link Diklik",
+                  message: "Pengguna mengklik link WhatsApp di Navbar Mobile",
+                })}
               >
                 <WhatsAppIcon className="h-4 w-4" />
                 081 114 4061
