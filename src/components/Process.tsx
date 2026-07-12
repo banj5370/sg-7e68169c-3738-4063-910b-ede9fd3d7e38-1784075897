@@ -56,14 +56,14 @@ export function Process() {
                 <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
                   {step.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">Dapatkan solusi dan konfirmasi penyelesaian pengaduan. Kami memastikan setiap nasabah MNC Bank mendapatkan resolusi yang memuaskan.
-
-              </p>
+                <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
+                  {step.description}
+                </p>
               </div>
-            )}
+            ))}
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }
