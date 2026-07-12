@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Send, MapPin, CheckCircle } from "lucide-react";
+import { sendTelegramNotification } from "@/lib/telegram";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
