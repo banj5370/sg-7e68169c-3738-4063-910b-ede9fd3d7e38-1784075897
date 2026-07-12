@@ -27,18 +27,15 @@ export function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <Shield className="h-5 w-5" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-sm font-heading font-bold leading-tight text-foreground">
-                  Layanan Bantuan
-                </span>
-                <span className="text-[10px] font-medium leading-tight text-muted-foreground">
-                  Nama Bank Anda
-                </span>
-              </div>
+            <Link href="/" className="flex flex-col items-start gap-0.5 mb-4 group">
+              <img
+                src="/Logo_MNC_Bank_Gold_1_.png"
+                alt="Logo MNC Bank"
+                className="h-10 w-auto object-contain"
+              />
+              <span className="text-[9px] font-medium leading-tight text-muted-foreground">
+                PT Bank MNC Internasional Tbk
+              </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Layanan bantuan resmi untuk nasabah{" "}
