@@ -123,7 +123,7 @@ export function ContactForm() {
                             Masalah Transaksi
                           </SelectItem>
                           <SelectItem value="e-banking">
-                            Gangguan E-Banking / M-Banking
+                            Gangguan MotionBank
                           </SelectItem>
                           <SelectItem value="biaya">
                             Kartu Kredit MNC Bank
