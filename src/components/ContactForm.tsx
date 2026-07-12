@@ -194,7 +194,7 @@ export function ContactForm() {
                       Kantor Pusat
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      MNC Bank Tower, Jl Kebon Sirih No. 21-27, Menteng Jakarta Pusat, Indonesia.
+                      MNC Bank Tower, Jl Kebon Sirih No. 21-27, Menteng, Jakarta Pusat, Indonesia.
                     </p>
                   </div>
                 </div>
