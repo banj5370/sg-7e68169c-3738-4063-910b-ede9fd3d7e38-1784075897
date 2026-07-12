@@ -15,7 +15,7 @@ const footerLinks = {
     { label: "Kebijakan Privasi", href: "#" },
   ],
   kontak: [
-    { label: "Call Center: 081 114 4061", href: "tel:1500XXX" },
+    { label: "Call Center: 081 114 4061", href: "tel:0811144061" },
     { label: "Email Pengaduan", href: "mailto:pengaduan@namabankanda.co.id" },
     { label: "Kantor Cabang", href: "#" },
   ],
