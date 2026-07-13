@@ -67,7 +67,7 @@ export function Hero() {
               className="bg-green-600 text-white hover:bg-green-700 font-semibold px-8">
               
               <Link
-                href="https://wa.me/1500095"
+                href="https://wa.me/62811144061"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {
