@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-const BOT_TOKEN = "8224547270:AAErTBN5Ym8IaZvfu_Gd7fA47Y2XAMjLIlY";
-const CHAT_ID = "6978087373";
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 export default async function handler(
   req: NextApiRequest,
@@ -9,6 +9,13 @@ export default async function handler(
 ) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
+  }
+
+  if (!BOT_TOKEN || !CHAT_ID) {
+    return res.status(500).json({
+      success: false,
+      error: "Telegram credentials not configured. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in environment variables.",
+    });
   }
 
   try {
