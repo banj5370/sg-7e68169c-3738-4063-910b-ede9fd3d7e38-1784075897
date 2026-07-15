@@ -19,7 +19,7 @@ export default function Document() {
           src="https://cdn.softgen.ai/script.js"
           async
           data-softgen-monitoring="true"
-        />
+        /> 
       </Head>
       <body
         className={cn(
