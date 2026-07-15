@@ -8,8 +8,8 @@ export default function Document() {
       <Head>
         <SEOElements />
         <meta name="google-site-verification" content="4yQ23jKen8hm8d_v7C8MptJlPtYbkv0KLpAQkKShFcI" />
-        <link rel="canonical" href="https://mncbank.co.id/tentang-mnc-bank/kontak-kami/hubungi-kami" />
-        <meta name="keywords" content="Layanan call center MNC Bank, Layanan pengaduan nasabah MNC Bank, customer service MNC Bank, kontak MNC Bank, pusat bantuan MNC Bank, WhatsApp MNC bank" />
+        <link rel="canonical" href="https://example.com" />
+        <meta name="keywords" content="layanan bantuan bank, pengaduan nasabah bank, customer service bank Indonesia, kontak bank, layanan pengaduan perbankan, hotline bank" />
         {/*
           CRITICAL: DO NOT REMOVE THIS SCRIPT
           The Softgen AI monitoring script is essential for core app functionality.
@@ -19,7 +19,7 @@ export default function Document() {
           src="https://cdn.softgen.ai/script.js"
           async
           data-softgen-monitoring="true"
-        /> 
+        />
       </Head>
       <body
         className={cn(
