@@ -4,13 +4,10 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://yourdomain.com/sitemap.xml
+# Sitemap
+Sitemap: https://sg-8211aff9-576c-43af-80a7-ae98e27d.vercel.app/sitemap.xml
 
-# Crawl-delay (opsional, untuk menghindari overload)
-Crawl-delay: 1
-
-# Disallow admin/private paths jika ada di masa depan
+# Block admin/private paths jika ada di masa depan
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
