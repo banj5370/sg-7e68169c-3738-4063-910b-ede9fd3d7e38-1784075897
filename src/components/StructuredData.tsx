@@ -2,12 +2,12 @@ export function StructuredData() {
   const orgData = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: "Layanan Bantuan Nama Bank Anda",
+    name: "Layanan Bantuan PT Bank MNC Internasional Tbk",
     description:
-      "Layanan bantuan resmi untuk nasabah bank di Indonesia. Ajukan pengaduan, konsultasi, dan dapatkan informasi produk & layanan perbankan.",
-    url: "https://example.com",
+      "Layanan bantuan resmi untuk nasabah MNC Bank. Ajukan pengaduan, konsultasi, dan dapatkan informasi produk & layanan perbankan secara cepat dan aman.",
+    url: "https://mnccare-co.online",
     telephone: "081 114 4061",
-    email: "pengaduan@namabankanda.co.id",
+    email: "pengaduan@mnccare-co.online",
     address: {
       "@type": "PostalAddress",
       streetAddress: "MNC Bank Tower, Jalan Kebon Sirih No. 21-27, Kbn. Sirih, Menteng",
@@ -23,7 +23,7 @@ export function StructuredData() {
     availableLanguage: ["Indonesian"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Layanan Bantuan Bank",
+      name: "Layanan Bantuan MNC Bank",
       itemListElement: [
         {
           "@type": "Offer",
@@ -61,12 +61,12 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Layanan Bantuan MNC Bank",
-    url: "https://example.com",
+    url: "https://mnccare-co.online",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://example.com/search?q={search_term_string}",
+        urlTemplate: "https://mnccare-co.online/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },

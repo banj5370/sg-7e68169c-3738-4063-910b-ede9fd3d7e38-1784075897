@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://sg-8211aff9-576c-43af-80a7-ae98e27d.vercel.app/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://mnccare-co.online/</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Layanan Section -->
   <url>
-    <loc>https://sg-8211aff9-576c-43af-80a7-ae98e27d.vercel.app/#layanan</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://mnccare-co.online/#layanan</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Proses Section -->
   <url>
-    <loc>https://sg-8211aff9-576c-43af-80a7-ae98e27d.vercel.app/#proses</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://mnccare-co.online/#proses</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- FAQ Section -->
   <url>
-    <loc>https://sg-8211aff9-576c-43af-80a7-ae98e27d.vercel.app/#faq</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://mnccare-co.online/#faq</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Kontak/Formulir Pengaduan Section -->
   <url>
-    <loc>https://sg-8211aff9-576c-43af-80a7-ae98e27d.vercel.app/#kontak</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://mnccare-co.online/#kontak</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

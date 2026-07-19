@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sg-8211aff9-576c-43af-80a7-ae98e27d.vercel.app/sitemap.xml
+Sitemap: https://mnccare-co.online/sitemap.xml
 
 # Block admin/private paths jika ada di masa depan
 Disallow: /api/
