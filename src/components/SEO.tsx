@@ -9,7 +9,7 @@ interface SEOProps {
 
 // SEO elements that can be used in _document.tsx (returns JSX without Head wrapper)
 export function SEOElements({
-  title = "Layanan Pengaduan dan Pusat Informasi Nasabah PT Bank MNC Internasional Tbk - Customer Service 24 Jam - Bantuan Cepat & Terpercaya",
+  title = "Layanan Bantuan MNC Bank - Pusat Pengaduan & Informasi Nasabah",
   description = "Layanan bantuan resmi untuk nasabah MNC Bank. Ajukan pengaduan, konsultasi, dan dapatkan informasi produk & layanan perbankan secara cepat dan aman.",
   image = "https://mnccare-co.online/og-image.png",
   url = "https://mnccare-co.online",
@@ -40,7 +40,7 @@ export function SEOElements({
 // SEO component for use in pages/_app.tsx or individual pages (uses next/head)
 // Note: Flattened structure (no fragment) for better Next.js Head compatibility during hot reload
 export function SEO({
-  title = "Layanan Pengaduan dan Pusat Informasi Nasabah PT Bank MNC Internasional Tbk - Customer Service 24 Jam - Bantuan Cepat & Terpercaya",
+  title = "Layanan Bantuan MNC Bank - Pusat Pengaduan & Informasi Nasabah",
   description = "Layanan bantuan resmi untuk nasabah MNC Bank. Ajukan pengaduan, konsultasi, dan dapatkan informasi produk & layanan perbankan secara cepat dan aman.",
   image = "https://mnccare-co.online/og-image.png",
   url = "https://mnccare-co.online",
