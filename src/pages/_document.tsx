@@ -9,7 +9,7 @@ export default function Document() {
         <SEOElements />
         <meta name="google-site-verification" content="4yQ23jKen8hm8d_v7C8MptJlPtYbkv0KLpAQkKShFcI" />
         <link rel="canonical" href="https://example.com" />
-        <meta name="keywords" content="layanan bantuan bank, pengaduan nasabah bank, customer service bank Indonesia, kontak bank, layanan pengaduan perbankan, hotline bank" />
+        <meta name="keywords" content="layanan bantuan bank, pengaduan nasabah bank, customer service MNC Bank, kontak bank, layanan pengaduan perbankan, hotline bank" />
         {/*
           CRITICAL: DO NOT REMOVE THIS SCRIPT
           The Softgen AI monitoring script is essential for core app functionality.
